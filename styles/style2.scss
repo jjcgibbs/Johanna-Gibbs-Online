@@ -20,7 +20,7 @@ body {
 }
 
 .top {
-    height: 15vh;
+    height: 17vh;
     width: 100%;
     display: flex;
     align-items: flex-start;
@@ -29,24 +29,32 @@ body {
         height: 9vh;
         width: 100%;
     }
-    
+
     @media (max-width: 550px) {
         height: 19vh;
-        width: 100%;
     }
+
+    @media (max-width: 415px) {
+        height: 15vh;
+    }
+
 
     h1 {
         color: rgb(255, 255, 255);
         font-size: 8.6vw;
         left: 1vw;
         top: 1vh;
-        font-family: "AuthenticSansBold";
+        font-family: "AuthenticSans";
         position: fixed;
         filter: blur(15px);
         
+        @media (max-width: 890px) {
+            font-size: 6.2vw;
+        }
+        
         @media (max-width: 550px) {
             font-size: 12.5vw;
-        }
+        }  
     }
 }
 
@@ -55,29 +63,41 @@ body {
     position: fixed;
     right: 10px;
     top: 10px;
+    padding: 7px;
     box-shadow: 0px 4px 14px;
-    padding: 10px;
-
-    @media (max-width: 890px) {
-        right: 2vw;
-        top: 1vh;
-    }
+    padding: 7px;
 
     @media (max-width: 550px) {
-        font-size: 2vw;
-        right: 16vw;
-        top: 9.5vh;
+        right: 80px;
+        top: 9vh;
     }
 
-    a {
-        text-decoration: none;
-        color: white;
-        font-size: 2vw;
-        @media (max-width: 550px) {
-            font-size: 2.8vw;
-        }
+    @media (max-width: 415px) {
+        right: 90px;
+        top: 7.2vh;
     }
 }
+
+a.librarian1 {
+    text-decoration: none;
+    color: white;
+    font-size: 1.7vw;
+   
+    @media (max-width: 550px) {
+        font-size: 3.6vw;
+    }
+}
+
+.librarian:hover {
+    box-shadow: 0px 4px 14px #e3e3e357;
+}
+
+// NOTES FOR TOMORROW JOHANNA stop LOOK AT LIBRARIAN BUTTON AND MAKE SURE IT WORKS ACROSS ALL SIZES stop
+// YOU ALSO NEED TO COPY ANY CHANGES INTO THE MAIN REPOSITORY AND REUPLOAD stop
+// CHECK FONT SIZES AND ADD A MEDIA TAG 415PX stop
+// COPY THE BACKGROUND COLOUR ACROSS ALL stop
+// AND DOUBLE CHECK THE BLUR, ESPECIALLY ON TSAR stop
+// LOOK INTO HOW YOU CAN AVOID HAVING THE PAGES IN THE URL stop
 
 
 
@@ -91,6 +111,7 @@ body {
     
     @media (max-width: 890px) {
         flex-wrap: wrap;
+        font-size: 5.5vw;
     }
 }
 
@@ -101,24 +122,20 @@ body {
     @media (max-width: 890px) {
         width: 80%;
         margin: 0px;
-        margin-top: 20px;
     }
+    
     @media (max-width: 550px) {
         width: 95%;
-        margin-top: 20px;
     }
 }
-
 
 .order {
     width: 50%;
-    
+
     @media (max-width: 890px) {
         width: 100%;
     }
-
 }
-
 
 a {
     color: rgb(180, 161, 161);
@@ -273,8 +290,8 @@ iframe {
 
 .image-series-Tsar {
     width: 70%;
-    -webkit-filter: drop-shadow(0px 0px 30px rgba(255, 255, 255, 0.479));
-    filter: drop-shadow(0px 0px 30px rgba(255, 255, 255, 0.479));
+    -webkit-filter: drop-shadow(10px 0px 30px rgba(255, 255, 255, 0.2));
+    filter: drop-shadow(10px 0px 30px rgba(255, 255, 255, 0.2));
     padding-bottom: 3vh;
 }
 
@@ -293,4 +310,6 @@ iframe {
 .image-SOS {
     width: 60%;
     padding-top: 20px;
+    -webkit-filter: drop-shadow(20px 0px 30px rgba(255, 255, 255, 0.479));
+    filter: drop-shadow(20px 0px 30px rgba(255, 255, 255, 0.479));
 }

@@ -19,7 +19,7 @@ body {
 }
 
 .top {
-  height: 15vh;
+  height: 17vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,7 +39,12 @@ body {
 @media (max-width: 550px) {
   .top {
     height: 19vh;
-    width: 100%;
+  }
+}
+
+@media (max-width: 415px) {
+  .top {
+    height: 15vh;
   }
 }
 
@@ -48,10 +53,16 @@ body {
   font-size: 8.6vw;
   left: 1vw;
   top: 1vh;
-  font-family: "AuthenticSansBold";
+  font-family: "AuthenticSans";
   position: fixed;
   -webkit-filter: blur(15px);
           filter: blur(15px);
+}
+
+@media (max-width: 890px) {
+  .top h1 {
+    font-size: 6.2vw;
+  }
 }
 
 @media (max-width: 550px) {
@@ -65,36 +76,41 @@ body {
   position: fixed;
   right: 10px;
   top: 10px;
+  padding: 7px;
   -webkit-box-shadow: 0px 4px 14px;
           box-shadow: 0px 4px 14px;
-  padding: 10px;
-}
-
-@media (max-width: 890px) {
-  .librarian {
-    right: 2vw;
-    top: 1vh;
-  }
+  padding: 7px;
 }
 
 @media (max-width: 550px) {
   .librarian {
-    font-size: 2vw;
-    right: 16vw;
-    top: 9.5vh;
+    right: 80px;
+    top: 9vh;
   }
 }
 
-.librarian a {
+@media (max-width: 415px) {
+  .librarian {
+    right: 90px;
+    top: 7.2vh;
+  }
+}
+
+a.librarian1 {
   text-decoration: none;
   color: white;
-  font-size: 2vw;
+  font-size: 1.7vw;
 }
 
 @media (max-width: 550px) {
-  .librarian a {
-    font-size: 2.8vw;
+  a.librarian1 {
+    font-size: 3.6vw;
   }
+}
+
+.librarian:hover {
+  -webkit-box-shadow: 0px 4px 14px #e3e3e357;
+          box-shadow: 0px 4px 14px #e3e3e357;
 }
 
 .content {
@@ -114,6 +130,7 @@ body {
   .content {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    font-size: 5.5vw;
   }
 }
 
@@ -127,14 +144,12 @@ body {
   .project-title {
     width: 80%;
     margin: 0px;
-    margin-top: 20px;
   }
 }
 
 @media (max-width: 550px) {
   .project-title {
     width: 95%;
-    margin-top: 20px;
   }
 }
 
@@ -311,8 +326,8 @@ iframe {
 
 .image-series-Tsar {
   width: 70%;
-  -webkit-filter: drop-shadow(0px 0px 30px rgba(255, 255, 255, 0.479));
-  filter: drop-shadow(0px 0px 30px rgba(255, 255, 255, 0.479));
+  -webkit-filter: drop-shadow(10px 0px 30px rgba(255, 255, 255, 0.2));
+  filter: drop-shadow(10px 0px 30px rgba(255, 255, 255, 0.2));
   padding-bottom: 3vh;
 }
 
@@ -333,5 +348,7 @@ iframe {
 .image-SOS {
   width: 60%;
   padding-top: 20px;
+  -webkit-filter: drop-shadow(20px 0px 30px rgba(255, 255, 255, 0.479));
+  filter: drop-shadow(20px 0px 30px rgba(255, 255, 255, 0.479));
 }
 /*# sourceMappingURL=style2.css.map */

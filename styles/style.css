@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: black;
+  background-color: white;
   font-family: "AuthenticSans";
 }
 
@@ -35,7 +35,12 @@ body {
 @media (max-width: 550px) {
   .top {
     height: 19vh;
-    width: 100%;
+  }
+}
+
+@media (max-width: 415px) {
+  .top {
+    height: 15vh;
   }
 }
 
@@ -70,18 +75,18 @@ body {
   padding: 7px;
 }
 
-@media (max-width: 890px) {
+@media (max-width: 550px) {
   .librarian {
-    right: 2vw;
-    top: 1vh;
+    right: 15px;
+    top: 9vh;
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 415px) {
   .librarian {
-    font-size: 2vw;
-    right: 16vw;
-    top: 9.5vh;
+    right: 10px;
+    top: 7.2vh;
+    background-color: rgba(255, 255, 255, 0);
   }
 }
 
@@ -89,13 +94,11 @@ a.librarian1 {
   text-decoration: none;
   color: black;
   font-size: 1.7vw;
-  -webkit-filter: blur(0px);
-          filter: blur(0px);
 }
 
 @media (max-width: 550px) {
   a.librarian1 {
-    font-size: 2.8vw;
+    font-size: 3.6vw;
   }
 }
 
@@ -220,8 +223,11 @@ a.help {
 @media (max-width: 890px) {
   a.help {
     padding-top: 0vh;
-    padding-left: 1.5vw;
+    padding-left: 20px;
     font-size: 5.5vw;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
   }
 }
 /*# sourceMappingURL=style.css.map */
